@@ -10,6 +10,16 @@ This project explores how combinations of clinical variables influence mortality
 
 An interactive risk explorer was developed to allow users to visualize how mortality changes as additional risk factors are added.
 
+## Repository Structure
+
+- `Final_Chf_visualization_risk_tool.ipynb` — interactive dashboard for exploring mortality risk across combinations of clinical variables
+
+- `analysis_notebook.ipynb` — exploratory data analysis, feature engineering, and interaction analysis
+
+- `images/` — visualizations and figures used throughout the project
+
+- `README.md` — project overview, methodology, findings, and limitations
+
 ## Dataset
 
 **Source:** UCI Heart Failure Clinical Records Dataset (299 patients)
@@ -88,19 +98,17 @@ Several variables initially appeared to be strongly associated with mortality du
 
 Unexpected findings included:
 
+Unexpected findings included:
+
 - Anaemia initially appeared highly predictive, but age stratification suggested that much of the observed effect was attributable to older patients.
 
-- Female patients initially appeared to experience higher mortality across several high-risk combinations. However, further investigation revealed that many of these subgroups contained only one to four patients, limiting the statistical reliability of the observed differences.
+- Female patients initially appeared to experience higher mortality across several high-risk combinations; however, many of these subgroups contained only one to four patients, limiting the reliability of the observed differences.
 
-- Some risk combinations demonstrated extremely high mortality rates but were based on very small subgroups, emphasizing the importance of considering sample size when interpreting results.
-- Smoking demonstrated little or no apparent association with mortality in several exploratory analyses. Further investigation suggested that this finding may have been influenced by confounding factors, survivor bias, or interactions with stronger predictors such as age, ejection fraction, and serum creatinine. The absence of a strong correlation in this dataset should not be interpreted as evidence that smoking is protective.
+- Smoking demonstrated little association with mortality despite its known cardiovascular risks, suggesting the presence of confounding factors and survivor bias.
 
 - Platelet abnormalities exhibited visual patterns in pairwise analyses but contributed relatively little predictive value when evaluated alongside stronger predictors such as ejection fraction and serum creatinine.
 
-- Several high-risk combinations demonstrated mortality rates exceeding 80%, although some subgroups contained relatively few patients.
-
 - Variables that appeared predictive in isolation often behaved differently when examined alongside additional clinical risk factors.
-
 
 <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/4a17d28e-8085-4613-b038-cf2b53495e8f" />
 <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/e62e7331-af86-40dd-bce5-517710195f4d" />
@@ -167,3 +175,13 @@ Features include:
 - ipywidgets
 - Interactive risk explorer
 - Dynamic filtering and comparison tools
+
+- ## Future Directions
+
+Future work could include:
+
+- Validation using larger heart failure datasets
+- Development of predictive machine-learning models
+- Time-to-event survival analysis
+- Integration of additional clinical variables
+- Expansion of the interactive dashboard
