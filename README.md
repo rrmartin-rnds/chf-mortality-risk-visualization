@@ -2,7 +2,7 @@
 Interactive visualization of clinical risk-factor combinations associated with mortality in congestive heart failure patients.
 
 <img width="932" height="427" alt="image" src="https://github.com/user-attachments/assets/d9669187-116f-4934-b444-576b8f3a026e" />
-
+**Note:** GitHub displays static outputs only. To use the interactive dashboard, open the notebook in Google Colab or Jupyter Notebook and run all cells using the provided dataset.
 
 ## Project Overview
 
@@ -12,15 +12,16 @@ An interactive risk explorer was developed to allow users to visualize how morta
 
 ## Repository Structure
 
-- README.md
+- README.md — project overview, methodology, findings, and limitations
   
-- Mortality_Risk_Analysis.ipynb- interactive dashboard for exploring mortality risk across combinations of clinical variables
+- Mortality_Risk_Analysis.ipynb - exploration of independent and progressive feature analysis
   
-- CHF_Mortality_Risk_Tool.ipynb-finalized visualization tool
+- CHF_Mortality_Risk_Tool.ipynb -finalized visualization risk tool
+
+- `heart_failure_clinical_records_dataset.csv` — source dataset
 
 - `images/` — visualizations and figures used throughout the project
 
-- `README.md` — project overview, methodology, findings, and limitations
 
 ## Dataset
 
@@ -100,13 +101,11 @@ Several variables initially appeared to be strongly associated with mortality du
 
 Unexpected findings included:
 
-Unexpected findings included:
-
 - Anaemia initially appeared highly predictive, but age stratification suggested that much of the observed effect was attributable to older patients.
 
 - Female patients initially appeared to experience higher mortality across several high-risk combinations; however, many of these subgroups contained only one to four patients, limiting the reliability of the observed differences.
 
-- Smoking demonstrated little association with mortality despite its known cardiovascular risks, suggesting the presence of confounding factors and survivor bias.
+- Smoking demonstrated little association with mortality within this dataset despite its established cardiovascular risks, suggesting the presence of confounding factors, survivor bias, or limitations related to sample size.
 
 - Platelet abnormalities exhibited visual patterns in pairwise analyses but contributed relatively little predictive value when evaluated alongside stronger predictors such as ejection fraction and serum creatinine.
 
