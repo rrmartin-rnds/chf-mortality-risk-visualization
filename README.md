@@ -177,6 +177,34 @@ Features include:
 - ipywidgets
 - Interactive risk explorer
 - Dynamic filtering and comparison tools
+  
+**Note:** Due to GitHub rendering limitations, the interactive widget must be run in Google Colab or Jupyter Notebook to access all functionality.
+
+## Running the Interactive Dashboard
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/rrmartin-rnds/chf-mortality-risk-visualization.git
+```
+
+2. Install the required packages:
+
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn plotly ipywidgets
+```
+
+3. Launch Jupyter Notebook:
+
+```bash
+jupyter notebook
+```
+
+4. Open:
+
+- Final_CHF_visualization_risk_tool.ipynb
+
+5. Run all cells to launch the interactive risk explorer.
 
 - ## Future Directions
 
