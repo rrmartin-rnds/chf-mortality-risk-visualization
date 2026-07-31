@@ -16,9 +16,7 @@ An interactive risk explorer was developed to allow users to visualize how morta
   
 - CHF_exploratory_analysis.ipynb- interactive dashboard for exploring mortality risk across combinations of clinical variables
   
-- CHF_visualization_analysis_and_risk_tool_prototype.ipynb-further progressive analysis of risk factors and initial prototype
-
-- Final_CHF_visualization_risk_tool.ipynb-finalized visualization tool
+- CHF_Mortality_Risk_Tool.ipynb-finalized visualization tool
 
 - `images/` — visualizations and figures used throughout the project
 
