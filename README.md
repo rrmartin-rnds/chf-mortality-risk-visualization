@@ -2,7 +2,12 @@
 Interactive visualization of clinical risk-factor combinations associated with mortality in congestive heart failure patients.
 
 <img width="932" height="427" alt="image" src="https://github.com/user-attachments/assets/d9669187-116f-4934-b444-576b8f3a026e" />
-**Note:** GitHub displays static outputs only. To use the interactive dashboard, open the notebook in Google Colab or Jupyter Notebook and run all cells using the provided dataset.
+
+## Live Application
+
+Access the interactive CHF Mortality Risk Explorer here:
+
+https://chf-mortality-risk-visualization-bnp7fdtrng8lzm4roagkah.streamlit.app/
 
 ## Project Overview
 
@@ -12,15 +17,18 @@ An interactive risk explorer was developed to allow users to visualize how morta
 
 ## Repository Structure
 
-- README.md — project overview, methodology, findings, and limitations
-  
-- Mortality_Risk_Analysis.ipynb - exploration of independent and progressive feature analysis
-  
-- CHF_Mortality_Risk_Tool.ipynb -finalized visualization risk tool
+- `README.md` — project overview, methodology, findings, and limitations
 
-- `heart_failure_clinical_records_dataset.csv` — source dataset
+- `streamlit_app.py` — source code for the interactive CHF Mortality Risk Explorer
+
+- `Mortality_Risk_Analysis.ipynb` — exploratory analysis of independent risk factors and progressive feature interactions
+
+- `heart_failure_clinical_records_dataset.csv` — source dataset (299 patients)
 
 - `images/` — visualizations and figures used throughout the project
+
+- `requirements.txt` — Python dependencies required to run the application
+
 
 
 ## Dataset
@@ -171,39 +179,24 @@ Features include:
 - Risk-factor aggregation
 - Exploratory data analysis (EDA)
 
-### Interactive Components
+## Interactive Application
 
-- ipywidgets
-- Interactive risk explorer
-- Dynamic filtering and comparison tools
-  
-**Note:** Due to GitHub rendering limitations, the interactive widget must be run in Google Colab or Jupyter Notebook to access all functionality.
+Explore the live CHF mortality risk explorer here:
 
-## Running the Interactive Dashboard
+https://chf-mortality-risk-visualization-bnp7fdtrng8lzm4roagkah.streamlit.app/
 
-1. Clone the repository:
+The interactive dashboard allows users to explore combinations of clinical risk factors associated with mortality in congestive heart failure patients.
 
-```bash
-git clone https://github.com/rrmartin-rnds/chf-mortality-risk-visualization.git
-```
+**Features**
 
-2. Install the required packages:
+- Interactive risk-factor selection
+- Preset high-risk combinations
+- Progressive mortality analysis
+- Dataset preview and matching records
+- Dynamic visualizations of mortality risk
 
-```bash
-pip install pandas numpy matplotlib seaborn scikit-learn plotly ipywidgets
-```
+**Note:** This tool is intended for exploratory and educational purposes only and should not be used for clinical decision-making.
 
-3. Launch Jupyter Notebook:
-
-```bash
-jupyter notebook
-```
-
-4. Open:
-
-- Final_CHF_visualization_risk_tool.ipynb
-
-5. Run all cells to launch the interactive risk explorer.
 
 - ## Future Directions
 
